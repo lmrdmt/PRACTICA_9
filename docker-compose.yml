@@ -1,0 +1,34 @@
+services:
+  web:
+    image: php:7.4-apache
+    container_name: apaserver
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www
+      - ./confApache:/etc/apache2
+    networks:
+      apared:
+        ipv4_address: 172.39.4.2
+
+  dns:
+    container_name: dnsserver
+    image: ubuntu/bind9
+    ports:
+      - "51:53"
+    volumes:
+      - ./confDNS/conf:/etc/bind
+      - ./confDNS/zonas:/var/lib/bind
+    networks:
+      apared:
+        ipv4_address: 172.39.4.3
+
+networks:
+  apared:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.39.0.0/16
+
+

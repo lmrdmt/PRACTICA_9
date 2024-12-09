@@ -1,0 +1,13 @@
+$TTL    604800
+@       IN      SOA     ns.asircastelao.int. some.email.address.com. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+
+@       IN      NS      ns.asircastelao.int.
+ns 	IN 	A 	172.39.4.3
+fabulasoscuras       IN      A       172.39.4.2
+fabulasmaravillosas     IN      A       172.39.4.2
+

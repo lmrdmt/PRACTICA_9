@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrowland Inspired</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #f94e60, #7a4fff);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f94e60;
+        }
+
+        /* Sección hero */
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero .content {
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #f94e60;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #7a4fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Productos */
+        .productos {
+            padding: 50px;
+            text-align: center;
+            background-color: #1d1d1d;
+        }
+
+        .productos h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .producto {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .producto h3 {
+            margin: 20px 0;
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .producto p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tomorrowland</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#festival">Festival</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h2>Bienvenidos al Festival de tus Sueños</h2>
+            <p>La magia de Tomorrowland, ahora más cerca de ti</p>
+            <a href="#productos" class="cta-btn">Explorar más</a>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <h2>Productos Exclusivos</h2>
+        <div class="producto">
+            <img src="https://via.placeholder.com/400" alt="Producto 1">
+            <h3>Camiseta Oficial</h3>
+            <p>Diseñada para los verdaderos fans de Tomorrowland.</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/400" alt="Producto 2">
+            <h3>Gorra del Festival</h3>
+            <p>Comodidad y estilo para el festival de tus sueños.</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/400" alt="Producto 3">
+            <h3>Pulsera VIP</h3>
+            <p>Accede a los mejores lugares con nuestra pulsera VIP.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <p>&copy; 2024 Tomorrowland. Todos los derechos reservados.</p>
+        <p>Contacto: contacto@tomorrowland.com</p>
+    </footer>
+</body>
+</html>

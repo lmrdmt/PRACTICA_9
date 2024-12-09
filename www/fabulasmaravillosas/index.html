@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Estilo Apple</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', sans-serif;
+            background-color: #f4f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo h1 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #333;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #333;
+            color: #fff;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero .hero-content {
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            text-decoration: none;
+            background-color: #0071e3;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        /* Productos */
+        .productos {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .productos h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .producto {
+            display: inline-block;
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .producto h3 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+
+        .producto p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mi Marca</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#soporte">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Descubre la innovación</h2>
+            <p>Diseño minimalista y tecnología avanzada al alcance de tus manos.</p>
+            <a href="#productos" class="cta-btn">Ver productos</a>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <h2>Productos destacados</h2>
+        <div class="producto">
+            <img src="https://via.placeholder.com/300" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción breve del producto 1.</p>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/300" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción breve del producto 2.</p>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>&copy; 2024 Mi Marca. Todos los derechos reservados.</p>
+        <p>Contacto: contacto@miempresa.com</p>
+    </footer>
+</body>
+</html>
