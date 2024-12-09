@@ -1,4 +1,4 @@
-Aquí tienes una versión reescrita y explicada de manera diferente del proyecto Docker Compose que me proporcionaste:
+
 
 ---
 
